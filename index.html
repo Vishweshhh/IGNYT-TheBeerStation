@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">IGNYT</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          178/6, 14th Main Rd, Kumaraswamy Layout, Bengaluru, Karnataka 560078, India
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 11.00 am to 12.30 am</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+91 82177 79517</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="https://www.instagram.com/ignyt_thebeerstation/?hl=en" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">ignyt_thebeerstation</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+        </ul>
+
+        
+      </nav>
+
+      <a href="https://www.google.com/maps/reserve/v/dine/c/ZyyDly337EQ?source=pa&opi=89978449&hl=en-OM&gei=FKYCZtCSFfuSxc8PueSF0AE&sourceurl=https://www.google.com/search?q%3Dignyt%2Bthe%2Bbeer%2Bstation%26source%3Dlmns%26bih%3D730%26biw%3D1536%26prmd%3Dimvsnbz%26rlz%3D1C1RXQR_enIN999IN999%26hl%3Den%26sa%3DX%26ved%3D2ahUKEwiTwOKy2JGFAxUtVaQEHbPbCtAQ0pQJKAB6BAgBEAI" class="btn btn-secondary">
+        <span class="text text-1">Reserve A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Reserve A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">IGNYT THE BEER STATION</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              IGNYT your <br>
+              guilty pleasure
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Sip, savor, and socialize in the heart of Bangalore city with your favorite brews.
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Ignite your tastebuds at IGNYT</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where ambiance meets the<br>
+              the flame of flavour
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with friends & family to feel the joy of mouthwatering food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Discover new flavours and great combinations  
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="https://www.google.com/maps/reserve/v/dine/c/ZyyDly337EQ?source=pa&opi=89978449&hl=en-OM&gei=FKYCZtCSFfuSxc8PueSF0AE&sourceurl=https://www.google.com/search?q%3Dignyt%2Bthe%2Bbeer%2Bstation%26source%3Dlmns%26bih%3D730%26biw%3D1536%26prmd%3Dimvsnbz%26rlz%3D1C1RXQR_enIN999IN999%26hl%3Den%26sa%3DX%26ved%3D2ahUKEwiTwOKy2JGFAxUtVaQEHbPbCtAQ0pQJKAB6BAgBEAI" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">Try our best</h2>
+
+          <p class="section-text">
+            Embrace craft beer's passion and social flair at Ignyt. Our diverse brew selection, from artisanal classics to exclusive finds, pairs perfectly with a tantalizing menu spanning comfort to culinary innovation. Join us for a sensory journey unlike any other.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Appetizers</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Mains</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">The first Beer Station in South Bengaluru</h2>
+
+            <p class="section-text">
+              Welcome to South Bengaluru's inaugural beer station, where craft brews meet culinary excellence. At our establishment, we proudly pioneer the craft beer scene, offering a curated selection of artisanal brews alongside a menu crafted to perfection. Experience the best of both worlds as we combine innovative flavors with a passion for quality, creating a destination that promises an unparalleled gastronomic adventure.
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+9182177795177" class="body-1 contact-number hover-underline">+91 82177 79517</a>
+
+            <a href="https://www.instagram.com/ignyt_thebeerstation/?hl=en" class="btn btn-primary">
+              <span class="text text-1">Learn more</span>
+
+              <span class="text text-2" aria-hidden="true">Learn More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+           
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Must Try</p>
+
+            <h2 class="headline-1 section-title">TOIT-TINT-IN WIT</h2>
+
+            <p class="section-text">
+              Toit Craft Beer revolutionizes the brewing scene with its unparalleled craftsmanship. Since its inception, Toit has set the standard for excellence in the industry. Experience the finest in craft beer innovation and flavor at our brewery, where every pour tells a story of passion and dedication.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">Mug (330ml)</del>
+
+              <span class="span body-1">Rs.270</span>
+            </div>
+
+            <a href="https://www.google.com/search?sca_esv=82300cf3937c2883&rlz=1C1RXQR_enIN999IN999&sxsrf=ACQVn0_6bItuqyD-yj_lZWM-NIBohhQvmA:1711460294808&q=ignyt+the+beer+station+menu&tbm=isch&source=lnms&prmd=imsvnbz&sa=X&ved=2ahUKEwjN26y3hpKFAxWzQvEDHfxJA5gQ0pQJegQICxAB&cshid=1711460301634012&biw=1536&bih=730&dpr=1.25" class="btn btn-primary">
+              <span class="text text-1">View Full Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Full Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Budweiser Premium (330ml)</a>
+                    </h3>
+
+                    
+
+                    <span class="span title-2">Rs. 230
+                    </span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pitcher (1.5L) Rs.1060 | Tower (3L) Rs.2100
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Budweiser Magnum (330ml)</a>
+                    </h3>
+
+                    <span class="span title-2">Rs. 245</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pitcher (1.5L) Rs.1250 | Tower (3L) Rs.2500
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Kingfisher Premium</a>
+                    </h3>
+
+                    <span class="span title-2">Rs. 199</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pitcher (1.5L) Rs.999 | Tower (3L) Rs.1999
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Chicken Pepperoni Pizza</a>
+                    </h3>
+
+                    
+
+                    <span class="span title-2">Rs. 320</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Pepperoni, Onion.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Tandoor Platter (Veg)</a>
+                    </h3>
+
+                    <span class="span title-2">Rs. 699</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Includes: Paneer Tikka, Mushroom Lazeez Tikka, Broccoli Cheese Tikka, portion of Gobi Manchurian.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Tandoori Platter (Non-Veg)</a>
+                    </h3>
+
+                    <span class="span title-2">Rs. 999</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Includes: Chicken Lazeez Tikka, Lasuni Chicken Tikka, Turkish Kebab, portion of Chicken Manchurian.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          
+
+          <a href="https://www.google.com/search?sca_esv=82300cf3937c2883&rlz=1C1RXQR_enIN999IN999&sxsrf=ACQVn0_6bItuqyD-yj_lZWM-NIBohhQvmA:1711460294808&q=ignyt+the+beer+station+menu&tbm=isch&source=lnms&prmd=imsvnbz&sa=X&ved=2ahUKEwjN26y3hpKFAxWzQvEDHfxJA5gQ0pQJegQICxAB&cshid=1711460301634012&biw=1536&bih=730&dpr=1.25" class="btn btn-primary">
+            <span class="text text-1">View Full Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View Full Menu</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            ಆಹಾರದ ರುಚಿ ನೋಡಿದ ನಂತರ ನಾನು ದೊಡ್ಡ ಅಭಿಮಾನಿಯಾದೆ. (I became a big fan after tasting the food.)
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Anush Kotian (@campus_magician)</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">We maintain the highest standards of hygiene for your peace of mind.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">Experience the refreshing ambiance of our one of a kind Beer Station</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">Our restaurant boasts skilled chefs who craft culinary delights with expertise and passion.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">Host your events and parties at our restaurant to always create memorable experiences.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EVENT
+      -->
+
+      
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home">
+          </a>
+
+          <address class="body-4">
+            178/6 14th main road, 20th, 50th Main Rd, Kumaraswamy Layout, Bengaluru, Karnataka 560078, India
+          </address>
+
+          <a href="https://www.instagram.com/ignyt_thebeerstation/?hl=en" class="body-4 contact-link">@ignyt_thebeerstation</a>
+
+          <a href="tel:+918217779517" class="body-4 contact-link">Booking Request : +91 82177 79517</a>
+
+          <p class="body-4">
+            Open : 11:00 am - 12:30 am
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+         
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="tel:+918217779517" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+         
+
+          <li>
+            <a href="https://www.instagram.com/ignyt_thebeerstation/?hl=en" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="https://www.zomato.com/bangalore/ignyt-the-beer-station-kumaraswamy-layout-bangalore" class="label-2 footer-link hover-underline">Zomato</a>
+          </li>
+
+          <li>
+            <a href="https://www.swiggy.com/restaurants/ignyt-the-beer-station-kumaraswamy-layout-and-uttarahalli-bangalore-844781" class="label-2 footer-link hover-underline">Swiggy</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/maps/place/IGNYT,+The+Beer+Station/@12.9075462,77.5615042,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1519a60e7f6d:0x743cf4ee0c36a725!8m2!3d12.9075462!4d77.5640791!16s%2Fg%2F11y1fcbsnn?entry=ttu" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+         
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
